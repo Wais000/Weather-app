@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+.left{
+    width: 100%;
+    margin-top: 5px;
+  /* border: 2px solid rgb(0, 0, 0);  */
+ margin-left: 30px;
+    padding: 30px;
+    font-family: 'Bai Jamjuree';
+ }
+ .icon-temp{
+     height: 120px;
+     margin-left: 0;
+     width: 300px;
+     display: flex;
+     align-items: center;
+     margin-bottom: 4%;
+ }
+ .icon-temp h1{
+font-size: 6rem;
+color: white;
+/* border: 2px solid gold; */
+align-items: center;
+
+}
+ .tem_icon{
+    
+     text-align: center;
+     color: white;
+     height: 100%;
+     width: 50%;  
+  
+ 
+ }
+
+ .tem_deg{
+    text-align: center;
+    color: white;
+    width: 50%;  
+ }
+
+.lat_lon{
+    display: flex;
+}
+#icon{
+    width: 100%;
+  /*   border: 2px solid white; */
+    height: 100%;
+}
+
+.icon_tem_div{
+     width: 100%;
+    height: 100%;
+   
+    
+}
+.details_container{
+    width: 40%;
+     /* border: 1px solid orange; */
+    display: flex;
+    margin-top: 1%;
+
+}
+.wind{
+width: 100%;
+width: 50%;
+font-size: 20px;
+color: whitesmoke;}
+/* border:1px solid greenyellow */
+
+.pressure{
+    width: 100%;
+    width: 50%;
+    font-size: 20px;
+    color: whitesmoke;}
+   /*  border:1px solid greenyellow */
+
+.search-box{position: absolute;
+    width: 350px;
+
+    height: 35px;
+  transform: translate(0%, 30%);  
+    
+}
+
+ 
+.search-box input[type="text"]{
+background: #fff;
+width: 270px;
+height: 30px;
+border: none;
+outline: none;
+padding: 0 15px;
+border-radius: 3px 0 0 3px;
+}
+.search-box input[type="submit"]{
+    position: relative;
+    background: #fff;
+    width: 70px;
+    height: 30px;
+    border: none;
+    outline: none;
+    padding: 0 15px;
+    border-radius:  0 25px 25px 0;
+    cursor: pointer;
+    background:rgb(255, 162, 0);
+    margin-left:3px;
+    box-shadow: inset 0 0 0 0 rgb(254, 200, 3);
+  
+    }
+    .search-box input[type="submit"]:hover{
+        box-shadow: inset 70px 0 0 0 darkblue;
+        color: #fff;
+        transition: ease-out 0.2s;
+    }
+.current-weather h1{
+    color: #fff;
+}

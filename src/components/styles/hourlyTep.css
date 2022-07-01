@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+.hourly_tem_box {
+  flex-wrap: wrap;
+  width: 400px;
+  height: 90vh;
+  padding: 5px;
+  background-color: rgba(198, 195, 195, 0.515);
+  /* border: 2px solid greenyellow; */
+
+  overflow-x: hidden;
+}
+
+.box {
+  width: 100%;
+  /* border: 1px solid darkmagenta; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Bai Jamjuree';
+  padding-right: 30px;
+  padding-left: 20px;
+
+
+}
+
+.box p{
+  font-size: 13px;
+}
+.hourlyIcon {
+  width: 40px;
+  height: 40px;
+  /* border: 2px solid blue; */
+}
+
+.temp_merged {
+  display: flex;
+  align-items: center;
+}
+.temp_merged p {
+  margin-left: 15px;
+ 
+}
+
+
+.right{
+   max-width: 40%;
+margin-right: 30px;
+padding:10px;
+padding-top: 20px;
+align-items: center;
+background-color:rgba(98, 110, 139, 0.247);
+ 
+}
+.temp_header {
+   width:100%;
+   display: flex;
+   justify-content: space-between;
+   
+   color: white;
+   padding: 5px;
+   background-color:rgb(255, 162, 0);
+   font-family: 'Bai Jamjuree';
+
+}
+
+.temp_header .header_forecast{
+
+margin-right: 50px;
+
+}
+
+
+.Sunny,
+.Cloudy,
+.Overcast,
+.Mist,
+.Patchy.rain.possible,
+.Patchy.snow.possible,
+.Patchy.sleet.possible,
+.Patchy.freezing.drizzle.possible,
+.Thundery.outbreaks.possible,
+.Blowing.snow,
+.Blizzard,
+.Fog,
+.Freezing.Fog,
+.Patchy.light.drizzle,
+.Light .drizzle,
+.Heavy.freezing.drizzle,
+.Patchy.light.rain,
+.Light.rain,
+.Moderate.rain.at.times,
+.Moderate.rain,
+.Heavy.rain.at.times,
+.Heavy.rain,
+.Light.freezing.rain,
+.Moderate.or.heavy.freezing.rain,
+.Light.sleet,
+.Moderate.or.heavy.sleet,
+.Patchy.light.snow,
+.Light.snow,
+.Patchy.moderate.snow,
+.Moderate.snow,
+.Patchy.heavy.snow,
+.Ice.pellets,
+.Light.rain.shower,
+.Moderate.or.heavy.rain.shower,
+.Torrential.rain.shower,
+.Light.sleet.showers,
+.Moderate.or.heavy.sleet.showers,
+.Light.snow.showers,
+.Moderate.or.heavy.snow.showers,
+.Light.showers.of.ice.pellets,
+.Moderate.or.heavy.showers.of.ice.pellets,
+.Patchy.light.rain.with.thunder,
+.Moderate.or.heavy.rain.with.thunder,
+.Patchy.light.snow.with.thunder,
+.Moderate.or.heavy.snow.with.thunder,
+.Clear, .Partly.cloudy {
+  height: 40px;
+  width: 10%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
+}
+
+@media screen and(max-width:786px) {
+  .box
+  {display: block;
+    border: 1px solid rgb(19, 131, 5);}
+}

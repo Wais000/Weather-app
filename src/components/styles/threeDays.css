@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+.days_container {
+  display: flex;
+  width:600px;
+  justify-content: space-between;
+  position: relative;
+  margin-top: 120px;
+  flex-wrap: wrap;
+  font-family: 'Bai Jamjuree';
+  /* border: 2px solid blueviolet; */
+}
+
+.days {
+  height: 30vh;
+  width: 170px;
+  border-radius: 10px;
+  padding: 10px;
+  background: inherit;
+  background: rgba(255, 255, 255, 0.557);
+  box-shadow: 0 0 32px rgba(0, 0, 0, 0.2);
+  /* border: 2px solid red; */
+}
+.temp {
+  display: flex;
+  align-items: center;
+}
+
+.forecast_details {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.081);
+  color:darkblue;
+  font-size: 13px;
+  padding: 8px;
+}
