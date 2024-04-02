@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+.hourly_tem_box {
+  background-color: 255, 255, 255, 0.557;
+  /* border: 3px solid green; */
+  padding: 4%;
+}
+
+.temp_header {
+  /* border: 3px solid blue; */
+  padding: 3%;
+}
+.box {
+  /* border: 3px solid rgb(5, 5, 11); */
+ padding:0% 4% 0% 4%;
+  width: 100%;
+  /* border: 1px solid darkmagenta; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Bai Jamjuree';
+  padding:0px 30px 0px 30px;
+ 
+}
+.hourly1,
+.hourly3,
+.hourly5,
+.hourly7,
+.hourly9,
+.hourly11,
+.hourly13,
+.hourly15,
+.hourly17,
+.hourly19,
+.hourly21,
+.hourly23
+{
+  background-color: rgba(255, 255, 255, 0.557);
+}
+.hourly,
+.hourly2,
+.hourly4,
+.hourly6,
+.hourly8,
+.hourly10,
+.hourly12,
+.hourly14,
+.hourly16,
+.hourly18,
+.hourly20,
+.hourly22
+{
+    border-right: 1px solid rgba(255, 255, 255, 0.557);
+    border-left: 1px solid rgba(255, 255, 255, 0.557);
+ }

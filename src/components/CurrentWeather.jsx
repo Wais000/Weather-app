@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import MyContext from "../context/MyContext";
 import useFetch from "../fetch/useFetch";
+import './HourlyWeather.css';
 
 const CurrentWeather = () => {
   const context = useContext(MyContext);

@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import MyContext from "../context/MyContext";
 import useFetch from "../fetch/useFetch";
+import "./HourlyWeather.css";
 const HourlyWeather = () => {
   const context = useContext(MyContext);
   const { search } = context;
@@ -11,57 +12,57 @@ const HourlyWeather = () => {
   if (error) return <p> {error.message}</p>;
 
   let hourly = results.forecast.forecastday[0].hour[0].condition.text;
-  const hourlyIcon = results.forecast.forecastday[0].hour[0].condition.text;
+  let hourlyIcon = results.forecast.forecastday[0].hour[0].condition.text;
   let hourlyTemp = Math.floor(results.forecast.forecastday[0].hour[0].temp_c);
   let hourlyTime = results.forecast.forecastday[0].hour[0].time.substring(11);
 
   let hourly1 = results.forecast.forecastday[0].hour[1].condition.text;
-  const hourlyIcon1 = results.forecast.forecastday[0].hour[1].condition.text;
+  let hourlyIcon1 = results.forecast.forecastday[0].hour[1].condition.text;
   let hourlyTemp1 = Math.floor(results.forecast.forecastday[0].hour[1].temp_c);
   let hourlyTime1 = results.forecast.forecastday[0].hour[1].time.substring(11);
 
   let hourly2 = results.forecast.forecastday[0].hour[2].condition.text;
-  const hourlyIcon2 = results.forecast.forecastday[0].hour[2].condition.text;
+  let hourlyIcon2 = results.forecast.forecastday[0].hour[2].condition.text;
   let hourlyTemp2 = Math.floor(results.forecast.forecastday[0].hour[2].temp_c);
   let hourlyTime2 = results.forecast.forecastday[0].hour[2].time.substring(11);
 
   let hourly3 = results.forecast.forecastday[0].hour[3].condition.text;
-  const hourlyIcon3 = results.forecast.forecastday[0].hour[3].condition.text;
+  let hourlyIcon3 = results.forecast.forecastday[0].hour[3].condition.text;
   let hourlyTemp3 = Math.floor(results.forecast.forecastday[0].hour[3].temp_c);
   let hourlyTime3 = results.forecast.forecastday[0].hour[3].time.substring(11);
 
   let hourly4 = results.forecast.forecastday[0].hour[4].condition.text;
-  const hourlyIcon4 = results.forecast.forecastday[0].hour[4].condition.text;
+  let hourlyIcon4 = results.forecast.forecastday[0].hour[4].condition.text;
   let hourlyTemp4 = Math.floor(results.forecast.forecastday[0].hour[4].temp_c);
   let hourlyTime4 = results.forecast.forecastday[0].hour[4].time.substring(11);
 
   let hourly5 = results.forecast.forecastday[0].hour[5].condition.text;
-  const hourlyIcon5 = results.forecast.forecastday[0].hour[5].condition.text;
+  let hourlyIcon5 = results.forecast.forecastday[0].hour[5].condition.text;
   let hourlyTemp5 = Math.floor(results.forecast.forecastday[0].hour[5].temp_c);
   let hourlyTime5 = results.forecast.forecastday[0].hour[5].time.substring(11);
 
   let hourly6 = results.forecast.forecastday[0].hour[6].condition.text;
-  const hourlyIcon6 = results.forecast.forecastday[0].hour[6].condition.text;
+  let hourlyIcon6 = results.forecast.forecastday[0].hour[6].condition.text;
   let hourlyTemp6 = Math.floor(results.forecast.forecastday[0].hour[6].temp_c);
   let hourlyTime6 = results.forecast.forecastday[0].hour[6].time.substring(11);
 
   let hourly7 = results.forecast.forecastday[0].hour[7].condition.text;
-  const hourlyIcon7 = results.forecast.forecastday[0].hour[7].condition.text;
+  let hourlyIcon7 = results.forecast.forecastday[0].hour[7].condition.text;
   let hourlyTemp7 = Math.floor(results.forecast.forecastday[0].hour[7].temp_c);
   let hourlyTime7 = results.forecast.forecastday[0].hour[7].time.substring(11);
 
   let hourly8 = results.forecast.forecastday[0].hour[8].condition.text;
-  const hourlyIcon8 = results.forecast.forecastday[0].hour[8].condition.text;
+  let hourlyIcon8 = results.forecast.forecastday[0].hour[8].condition.text;
   let hourlyTemp8 = Math.floor(results.forecast.forecastday[0].hour[8].temp_c);
   let hourlyTime8 = results.forecast.forecastday[0].hour[8].time.substring(11);
 
   let hourly9 = results.forecast.forecastday[0].hour[9].condition.text;
-  const hourlyIcon9 = results.forecast.forecastday[0].hour[9].condition.text;
+  let hourlyIcon9 = results.forecast.forecastday[0].hour[9].condition.text;
   let hourlyTemp9 = Math.floor(results.forecast.forecastday[0].hour[9].temp_c);
   let hourlyTime9 = results.forecast.forecastday[0].hour[9].time.substring(11);
 
   let hourly10 = results.forecast.forecastday[0].hour[10].condition.text;
-  const hourlyIcon10 = results.forecast.forecastday[0].hour[10].condition.text;
+  let hourlyIcon10 = results.forecast.forecastday[0].hour[10].condition.text;
   let hourlyTemp10 = Math.floor(
     results.forecast.forecastday[0].hour[10].temp_c
   );
@@ -69,7 +70,7 @@ const HourlyWeather = () => {
     results.forecast.forecastday[0].hour[10].time.substring(11);
 
   let hourly11 = results.forecast.forecastday[0].hour[11].condition.text;
-  const hourlyIcon11 = results.forecast.forecastday[0].hour[11].condition.text;
+  let hourlyIcon11 = results.forecast.forecastday[0].hour[11].condition.text;
   let hourlyTemp11 = Math.floor(
     results.forecast.forecastday[0].hour[11].temp_c
   );
@@ -77,7 +78,7 @@ const HourlyWeather = () => {
     results.forecast.forecastday[0].hour[11].time.substring(11);
 
   let hourly12 = results.forecast.forecastday[0].hour[12].condition.text;
-  const hourlyIcon12 = results.forecast.forecastday[0].hour[12].condition.text;
+  let hourlyIcon12 = results.forecast.forecastday[0].hour[12].condition.text;
   let hourlyTemp12 = Math.floor(
     results.forecast.forecastday[0].hour[12].temp_c
   );
@@ -85,7 +86,7 @@ const HourlyWeather = () => {
     results.forecast.forecastday[0].hour[12].time.substring(11);
 
   let hourly13 = results.forecast.forecastday[0].hour[13].condition.text;
-  const hourlyIcon13 = results.forecast.forecastday[0].hour[13].condition.text;
+  let hourlyIcon13 = results.forecast.forecastday[0].hour[13].condition.text;
   let hourlyTemp13 = Math.floor(
     results.forecast.forecastday[0].hour[13].temp_c
   );
@@ -93,7 +94,7 @@ const HourlyWeather = () => {
     results.forecast.forecastday[0].hour[13].time.substring(11);
 
   let hourly14 = results.forecast.forecastday[0].hour[14].condition.text;
-  const hourlyIcon14 = results.forecast.forecastday[0].hour[14].condition.text;
+  let hourlyIcon14 = results.forecast.forecastday[0].hour[14].condition.text;
   let hourlyTemp14 = Math.floor(
     results.forecast.forecastday[0].hour[14].temp_c
   );
@@ -101,7 +102,7 @@ const HourlyWeather = () => {
     results.forecast.forecastday[0].hour[14].time.substring(11);
 
   let hourly15 = results.forecast.forecastday[0].hour[15].condition.text;
-  const hourlyIcon15 = results.forecast.forecastday[0].hour[15].condition.text;
+  let hourlyIcon15 = results.forecast.forecastday[0].hour[15].condition.text;
   let hourlyTemp15 = Math.floor(
     results.forecast.forecastday[0].hour[15].temp_c
   );
@@ -109,7 +110,7 @@ const HourlyWeather = () => {
     results.forecast.forecastday[0].hour[15].time.substring(11);
 
   let hourly16 = results.forecast.forecastday[0].hour[16].condition.text;
-  const hourlyIcon16 = results.forecast.forecastday[0].hour[16].condition.text;
+  let hourlyIcon16 = results.forecast.forecastday[0].hour[16].condition.text;
   let hourlyTemp16 = Math.floor(
     results.forecast.forecastday[0].hour[16].temp_c
   );
@@ -117,7 +118,7 @@ const HourlyWeather = () => {
     results.forecast.forecastday[0].hour[16].time.substring(11);
 
   let hourly17 = results.forecast.forecastday[0].hour[17].condition.text;
-  const hourlyIcon17 = results.forecast.forecastday[0].hour[17].condition.text;
+  let hourlyIcon17 = results.forecast.forecastday[0].hour[17].condition.text;
   let hourlyTemp17 = Math.floor(
     results.forecast.forecastday[0].hour[17].temp_c
   );
@@ -125,7 +126,7 @@ const HourlyWeather = () => {
     results.forecast.forecastday[0].hour[17].time.substring(11);
 
   let hourly18 = results.forecast.forecastday[0].hour[18].condition.text;
-  const hourlyIcon18 = results.forecast.forecastday[0].hour[18].condition.text;
+  let hourlyIcon18 = results.forecast.forecastday[0].hour[18].condition.text;
   let hourlyTemp18 = Math.floor(
     results.forecast.forecastday[0].hour[18].temp_c
   );
@@ -133,7 +134,7 @@ const HourlyWeather = () => {
     results.forecast.forecastday[0].hour[18].time.substring(11);
 
   let hourly19 = results.forecast.forecastday[0].hour[19].condition.text;
-  const hourlyIcon19 = results.forecast.forecastday[0].hour[19].condition.text;
+  let hourlyIcon19 = results.forecast.forecastday[0].hour[19].condition.text;
   let hourlyTemp19 = Math.floor(
     results.forecast.forecastday[0].hour[19].temp_c
   );
@@ -141,20 +142,22 @@ const HourlyWeather = () => {
     results.forecast.forecastday[0].hour[19].time.substring(11);
 
   let hourly20 = results.forecast.forecastday[0].hour[20].condition.text;
-  const hourlyIcon20 = results.forecast.forecastday[0].hour[20].condition.text;
+  let hourlyIcon20 = results.forecast.forecastday[0].hour[20].condition.text;
   let hourlyTemp20 = Math.floor(
     results.forecast.forecastday[0].hour[20].temp_c
   );
   let hourlyTime20 =
-  results.forecast.forecastday[0].hour[20].time.substring(11);
+    results.forecast.forecastday[0].hour[20].time.substring(11);
   let hourly21 = results.forecast.forecastday[0].hour[21].condition.text;
-  const hourlyIcon21 = results.forecast.forecastday[0].hour[21].condition.text;
-  let hourlyTemp21 = Math.floor(results.forecast.forecastday[0].hour[21].temp_c ); 
+  let hourlyIcon21 = results.forecast.forecastday[0].hour[21].condition.text;
+  let hourlyTemp21 = Math.floor(
+    results.forecast.forecastday[0].hour[21].temp_c
+  );
   let hourlyTime21 =
     results.forecast.forecastday[0].hour[21].time.substring(11);
 
   let hourly22 = results.forecast.forecastday[0].hour[22].condition.text;
-  const hourlyIcon22 = results.forecast.forecastday[0].hour[22].condition.text;
+  let hourlyIcon22 = results.forecast.forecastday[0].hour[22].condition.text;
   let hourlyTemp22 = Math.floor(
     results.forecast.forecastday[0].hour[22].temp_c
   );
@@ -162,7 +165,7 @@ const HourlyWeather = () => {
     results.forecast.forecastday[0].hour[22].time.substring(11);
 
   let hourly23 = results.forecast.forecastday[0].hour[23].condition.text;
-  const hourlyIcon23 = results.forecast.forecastday[0].hour[23].condition.text;
+  let hourlyIcon23 = results.forecast.forecastday[0].hour[23].condition.text;
   let hourlyTemp23 = Math.floor(
     results.forecast.forecastday[0].hour[23].temp_c
   );
@@ -174,7 +177,6 @@ const HourlyWeather = () => {
       <div className="temp_header">
         <p>Time</p>
         <p className="header_forecast">Forecast</p>
-
       </div>
       <div className="hourly box">
         <p>{hourlyTime}am</p>
@@ -185,7 +187,7 @@ const HourlyWeather = () => {
         </div>
       </div>
 
-      <div className="hourly1 box" style={{backgroundColor:"rgba(255, 255, 255, 0.557)"}}>
+      <div className="hourly1 box">
         <p>{hourlyTime1}am</p>
         <div className={hourlyIcon1}></div>
         <div className="temp_merged">
@@ -202,7 +204,7 @@ const HourlyWeather = () => {
           <p>{hourly2}</p>
         </div>
       </div>
-      <div className="hourly3 box" style={{backgroundColor:"rgba(255, 255, 255, 0.557)"}}>
+      <div className="hourly3 box">
         <p>{hourlyTime3}am</p>
         <div className={hourlyIcon3}></div>
         <div className="temp_merged">
@@ -220,7 +222,7 @@ const HourlyWeather = () => {
         </div>
       </div>
 
-      <div className="hourly5 box" style={{backgroundColor:"rgba(255, 255, 255, 0.557)"}}>
+      <div className="hourly5 box">
         <p>{hourlyTime5}am</p>
         <div className={hourlyIcon5}></div>
         <div className="temp_merged">
@@ -230,16 +232,16 @@ const HourlyWeather = () => {
       </div>
       <div className="hourly6 box">
         <p>{hourlyTime6}am</p>
-        <div className={hourlyIcon6}></div>
+        <div className={hourlyIcon6} style={{ border: "2px solid red" }}></div>
         <div className="temp_merged">
           <h5>{hourlyTemp6}°</h5>
           <p>{hourly6}</p>
         </div>
       </div>
 
-      <div className="hourly7 box" style={{backgroundColor:"rgba(255, 255, 255, 0.557)"}}>
+      <div className="hourly7 box">
         <p>{hourlyTime7}am</p>
-        <div className={hourlyIcon7}></div>
+        <div className={hourlyIcon7} style={{ border: "2px solid red" }}></div>
         <div className="temp_merged">
           <h5>{hourlyTemp7}°</h5>
           <p>{hourly7}</p>
@@ -247,15 +249,15 @@ const HourlyWeather = () => {
       </div>
       <div className="hourly8 box">
         <p>{hourlyTime8}am</p>
-        <div className={hourlyIcon8}></div>
+        <div className={hourlyIcon8} style={{ border: "2px solid red" }}></div>
         <div className="temp_merged">
           <h5>{hourlyTemp8}°</h5>
           <p>{hourly8}</p>
         </div>
       </div>
-      <div className="hourly9 box" style={{backgroundColor:"rgba(255, 255, 255, 0.557)"}}>
+      <div className="hourly9 box">
         <p>{hourlyTime9}am</p>
-       <div className={hourlyIcon9}></div>
+        <div className={hourlyIcon9}></div>
         <div className="temp_merged">
           <h5>{hourlyTemp9}°</h5>
           <p>{hourly9}</p>
@@ -271,8 +273,8 @@ const HourlyWeather = () => {
         </div>
       </div>
 
-      <div className="hourly11 box" style={{backgroundColor:"rgba(255, 255, 255, 0.557)"}}>
-      <p>{hourlyTime11}pm</p>
+      <div className="hourly11 box">
+        <p>{hourlyTime11}pm</p>
         <div className={hourlyIcon11}></div>
         <div className="temp_merged">
           <h5>{hourlyTemp11}°</h5>
@@ -289,7 +291,7 @@ const HourlyWeather = () => {
         </div>
       </div>
 
-      <div className="hourly13 box" style={{backgroundColor:"rgba(255, 255, 255, 0.557)"}}>
+      <div className="hourly13 box">
         <p>{hourlyTime13}pm</p>
         <div className={hourlyIcon13}></div>
         <div className="temp_merged">
@@ -307,7 +309,7 @@ const HourlyWeather = () => {
         </div>
       </div>
 
-      <div className="hourly15 box" style={{backgroundColor:"rgba(255, 255, 255, 0.557)"}}>
+      <div className="hourly15 box">
         <p>{hourlyTime15}pm</p>
         <div className={hourlyIcon15}></div>
         <div className="temp_merged">
@@ -325,7 +327,7 @@ const HourlyWeather = () => {
         </div>
       </div>
 
-      <div className="hourly17 box" style={{backgroundColor:"rgba(255, 255, 255, 0.557)"}}>
+      <div className="hourly17 box">
         <p>{hourlyTime17}pm</p>
         <div className={hourlyIcon17}></div>
         <div className="temp_merged">
@@ -343,7 +345,7 @@ const HourlyWeather = () => {
         </div>
       </div>
 
-      <div className="hourly19 box" style={{backgroundColor:"rgba(255, 255, 255, 0.557)"}}>
+      <div className="hourly19 box">
         <p>{hourlyTime19}pm</p>
         <div className={hourlyIcon19}></div>
         <div className="temp_merged">
@@ -361,7 +363,7 @@ const HourlyWeather = () => {
         </div>
       </div>
 
-      <div className="hourly21 box" style={{backgroundColor:"rgba(255, 255, 255, 0.557)"}}>
+      <div className="hourly21 box">
         <p>{hourlyTime21}pm</p>
         <div className={hourlyIcon21}></div>
         <div className="temp_merged">
@@ -379,7 +381,7 @@ const HourlyWeather = () => {
         </div>
       </div>
 
-      <div className="hourly23 box" style={{backgroundColor:"rgba(255, 255, 255, 0.557)"}}>
+      <div className="hourly23 box">
         <p>{hourlyTime23}pm</p>
         <div className={hourlyIcon23}></div>
         <div className="temp_merged">

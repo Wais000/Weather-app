@@ -17,13 +17,7 @@ const App = () => {
   if (error) return <p> {error.message}</p>;
 
   const generatedIcon = results.current.condition.text;
-  /* const context=useContext(MyContext)
-const {search}=context
-const data=useFetch(search)
-const {results,loading, error}=data
-if(loading) return <p> Loading...</p>
 
-if(error) return <p> {error.message}</p> */
 
   return (
     <main id="main_container" className={generatedIcon}>
