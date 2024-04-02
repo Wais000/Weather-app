@@ -100,8 +100,11 @@ align-content: space-between;
 .Patchy.light.drizzle {
   background-image: url("../src/pictures/184-icons/weather/Patchy\ light\ drizzle.svg");
 }
+.light.drizzle {
+  background-image: url("../src/pictures/184-icons/weather/Patchy\ light\ drizzle.svg");
+}
 
-.Light .drizzle {
+.Light.drizzle {
   background-image: url("../src/pictures/184-icons/weather/Light\ drizzle.svg");
 }
 .Heavy.freezing.drizzle {
