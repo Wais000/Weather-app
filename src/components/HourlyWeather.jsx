@@ -10,6 +10,7 @@ const HourlyWeather = () => {
   const { results, loading, error } = data;
   if (loading) return <p> Loading...</p>;
   if (error) return <p> {error.message}</p>;
+  if (!results || !results.forecast.forecastday) return <p> No forecastday weather data available.</p>;
   console.log(data);
 
   let hourly = results.forecast.forecastday[0].hour[0].condition.text;
