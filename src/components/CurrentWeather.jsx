@@ -18,12 +18,13 @@ const CurrentWeather = () => {
 
   if (loading) return <p> Loading...</p>;
   if (error) return <p> {error.message}</p>;
+  if (!results || !results.current) return <p> No current weather data available.</p>;
 
   const generatedIcon = results.current.condition.icon;
   let localTime = results.location.localtime;
   let cityName = results.location.name;
-  let CountryName = (results.location.country = "");
-  let Temperature = Math.floor(data.results.current.temp_c);
+  let CountryName = results.location.country; // Corrected this line
+  let Temperature = Math.floor(results.current.temp_c);
   let weatherCondition = results.current.condition.text;
   let lastUpdate = results.current.last_updated;
   let wind_dir = results.current.wind_dir;
@@ -41,14 +42,7 @@ const CurrentWeather = () => {
       <p>{localTime}</p>
       <p>{weatherCondition}</p>
       <div className="icon-temp">
-      
-         
-         
-              <img src={generatedIcon} alt="" />
-           
-         
-        
-
+        <img src={generatedIcon} alt="" />
         <h1>{Temperature}°</h1>
       </div>
       <div className="more_details">
