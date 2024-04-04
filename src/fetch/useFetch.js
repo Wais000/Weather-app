@@ -7,7 +7,7 @@ const useFetch = (search) => {
     error: null,
   });
 const KEY=process.env.REACT_APP_KEY
-const URL=`https://api.weatherapi.com/v1/forecast.json?key=${KEY}&q=${search}&days=3&q=07112`
+const URL=`http://api.weatherapi.com/v1/forecast.json?key=${KEY}&q=${search}&days=3&q=07112`
 
 
 console.log(data.results);
