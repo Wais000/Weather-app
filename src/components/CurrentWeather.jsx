@@ -10,16 +10,26 @@ import { TiWeatherWindy } from "react-icons/ti";
 import { WiHumidity } from "react-icons/wi";
 
 const CurrentWeather = () => {
+  // const context = useContext(MyContext);
+  // const { search } = context;
+
+  // const data = useFetch(search);
+  // const { results, loading, error } = data;
+
+  // if (loading) return <p> Loading...</p>;
+  // if (error) return <p> {error.message}</p>;
+  // if (!results || !results.current) return <p> No current weather data available.</p>;
+
   const context = useContext(MyContext);
   const { search } = context;
 
   const data = useFetch(search);
   const { results, loading, error } = data;
 
-  if (loading) return <p> Loading...</p>;
-  if (error) return <p> {error.message}</p>;
-  if (!results || !results.current) return <p> No current weather data available.</p>;
-
+  if (loading) return <p>Loading...</p>;
+  if (error) return <p>{error.message}</p>;
+  if (!results || !results.current)
+    return <p>No current weather data available.</p>;
 
   const generatedIcon = results.current.condition.icon;
   let localTime = results.location.localtime;
@@ -43,13 +53,7 @@ const CurrentWeather = () => {
       <p>{localTime}</p>
       <p>{weatherCondition}</p>
       <div className="icon-temp">
-      
-         
-         
-              <img src={generatedIcon} alt="" />
-           
-         
-        
+        <img src={generatedIcon} alt="" />
 
         <h1>{Temperature}°</h1>
       </div>
