@@ -6,20 +6,28 @@ const useFetch = (search) => {
     loading: true,
     error: null,
   });
-const KEY=process.env.REACT_APP_KEY
-const URL=`https://api.weatherapi.com/v1/forecast.json?key=${KEY}&q=${search}&days=3&q=07112`
 
+  const KEY = process.env.REACT_APP_KEY;
+  const URL = `https://api.weatherapi.com/v1/forecast.json?key=${KEY}&q=${search}&days=3&q=07112`;
 
-console.log(data.results);
-console.log(URL);
-  useEffect(()=>{
-fetch(URL)
-.then((res)=>res.json())
-.then((results)=>setData({results, loading:false, error:null}))
-.catch((error)=>setData({results:null, loading: false, error}))
-  },[URL])
+  useEffect(() => {
+    fetch(URL)
+      .then((res) => {
+        if (!res.ok) {
+          // Check if API key is disabled
+          if (res.status === 403) {
+            throw new Error("API key has been disabled");
+          } else {
+            throw new Error("Failed to fetch data");
+          }
+        }
+        return res.json();
+      })
+      .then((results) => setData({ results, loading: false, error: null }))
+      .catch((error) => setData({ results: null, loading: false, error }));
+  }, [URL]);
 
-  return data
+  return data;
 };
 
 export default useFetch;
