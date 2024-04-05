@@ -7,7 +7,7 @@ const useFetch = (search) => {
     error: null,
   });
 
-  const KEY = process.env.REACT_APP_KEY;
+  const KEY = process.env.REACT_APP_KEY; // Accessing the API key from environment variables
   const URL = `https://api.weatherapi.com/v1/forecast.json?key=${KEY}&q=${search}&days=3&q=07112`;
 
   useEffect(() => {
@@ -31,3 +31,4 @@ const useFetch = (search) => {
 };
 
 export default useFetch;
+
