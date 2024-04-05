@@ -29,8 +29,8 @@ if(error) return <p> {error.message}</p> */
     <main id="main_container" className={generatedIcon}>
       <div className="left">
         <CurrentWeather />
-        <Form />
-        <ThreeDaysForcast />
+        {/* <Form /> */}
+        {/* <ThreeDaysForcast /> */}
       </div>
       <div className="right">
         <HourlyWeather />

@@ -19,14 +19,17 @@
   /* height: 100vh; */
 align-content: space-between;
   display: flex;
+  flex-wrap: wrap;
   padding: 20px;
   margin: 0 auto;
+  align-items: center;
+  justify-content: center;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: darken;
-
-    
+border: 3px solid red;
+    margin: 0;
   }
 /* 
 @media screen and (mas-width:768px){
@@ -37,180 +40,3 @@ align-content: space-between;
   }
 } */
 
-.Sunny {
-  background-image: url("../src/pictures/184-icons/weather/sunny.svg");
-}
-
-
-.Partly.cloudy {
-  background-image: url("../src/pictures/184-icons/weather/overcast.svg");
-}
-
-.Cloudy {
-  background-image: url("../src/pictures/184-icons/weather/overcast.svg");
-}
-
-.Overcast {
-  background-image: url("../src/pictures/184-icons/weather/overcast.svg");
-}
-
-.Mist {
-  background-image: url("../src/pictures/184-icons/weather/mist.svg");
-}
-
-.Patchy.rain.possible {
-  background-image: url("../src/pictures/184-icons/weather/sun_rain.svg");
-}
-.Patchy.rain.nearby {
-  background-image: url("../src/pictures/184-icons/weather/sun_rain.svg");
-}
-
-.Patchy.snow.possible {
-  background-image: url("../src/pictures/184-icons/weather/patcht_snow_possible.svg");
-}
-
-.Patchy.sleet.possible {
-  background-image: url("../src/pictures/184-icons/weather/Patchy\ sleet\ possible.svg");
-}
-
-.Patchy.freezing.drizzle.possible {
-  background-image: url("../src/pictures/184-icons/weather/patchy\ freezing\ drizzel\ possible.svg");
-}
-
-.Thundery.outbreaks.possible {
-  background-image: url("../src/pictures/184-icons/weather/thunder.svg");
-}
-
-.Blowing.snow {
-  background-image: url("../src/pictures/184-icons/weather/Blowing\ snow.svg");
-}
-
-.Blizzard {
-  background-image: url("../src/pictures/184-icons/weather/Blizzard.svg");
-}
-
-.Fog {
-  background-image: url("../src/pictures/184-icons/weather/fog.svg");
-}
-
-.Freezing.Fog {
-  background-image: url("../src/pictures/184-icons/weather/fog.svg");
-}
-
-.Patchy.light.drizzle {
-  background-image: url("../src/pictures/184-icons/weather/Patchy\ light\ drizzle.svg");
-}
-.light.drizzle {
-  background-image: url("../src/pictures/184-icons/weather/Patchy\ light\ drizzle.svg");
-}
-
-.Light.drizzle {
-  background-image: url("../src/pictures/184-icons/weather/Light\ drizzle.svg");
-}
-.Heavy.freezing.drizzle {
-  background-image: url("../src/pictures/184-icons/weather/Heavy\ freezing\ drizzle.svg");
-}
-
-.Patchy.light.rain {
-  background-image: url("../src/pictures/184-icons/weather/Patchy\ light\ rain.svg");
-}
-.Light.rain {
-  background-image: url("../src/pictures/184-icons/weather/Light\ rain.svg");
-}
-.Moderate.rain.at.times {
-  background-image: url("../src/pictures/184-icons/weather/Moderate\ rain\ at\ times.svg");
-}
-.Moderate.rain {
-  background-image: url("../src/pictures/184-icons/weather/Moderate\ rain.svg");
-}
-.Heavy.rain.at.times {
-  background-image: url("../src/pictures/184-icons/weather/heavy_rain.svg");
-}
-.Heavy.rain {
-  background-image: url("../src/pictures/184-icons/weather/heavy_rain.svg");
-}
-.Light.freezing.rain {
-  background-image: url("../src/pictures/184-icons/weather/Light\ freezing\ rain.svg");
-}
-.Moderate.or.heavy.freezing.rain {
-  background-image: url("../src/pictures/184-icons/weather/Moderate\ or\ heavy\ freezing\ rain.svg");
-}
-.Light.sleet {
-  background-image: url("../src/pictures/184-icons/weather/Light\ sleet.svg");
-}
-.Moderate.or.heavy.sleet {
-  background-image: url("../src/pictures/184-icons/weather/Moderate\ or\ heavy\ sleet.svg");
-}
-.Patchy.light.snow {
-  background-image: url("../src/pictures/184-icons/weather/Patchy\ light\ snow.svg");
-}
-.Light.snow {
-  background-image: url("../src/pictures/184-icons/weather/Light\ snow.svg");
-}
-.Patchy.moderate.snow {
-  background-image: url("../src/pictures/184-icons/weather/Patchy\ moderate\ snow.svg");
-}
-.Moderate.snow {
-  background-image: url("../src/pictures/184-icons/weather/Moderate\ snow.svg");
-}
-.Patchy.heavy.snow {
-  background-image: url("../src/pictures/184-icons/weather/Patchy\ heavy\ snow.svg");
-}
-.Heavy.snow {
-  background-image: url("../src/pictures/184-icons/weather/Heavy\ snow.svg");
-}
-.Ice.pellets {
-  background-image: url("../src/pictures/184-icons/weather/Ice\ pellets.svg");
-}
-.Light.rain.shower {
-  background-image: url("../src/pictures/184-icons/weather/Light\ rain\ shower.svg");
-}
-.Moderate.or.heavy.rain.shower {
-  background-image: url("../src/pictures/184-icons/weather/Moderate\ or\ heavy\ rain\ shower.svg");
-}
-.Torrential.rain.shower {
-  background-image: url("../src/pictures/184-icons/weather/Torrential\ rain\ shower.svg");
-}
-
-.Light.sleet.showers {
-  background-image: url("../src/pictures/184-icons/weather/Light\ sleet\ showers.svg");
-}
-
-.Moderate.or.heavy.sleet.showers {
-  background-image: url("../src/pictures/184-icons/weather/Moderate\ or\ heavy\ sleet\ showers.svg");
-}
-
-.Light.snow.showers {
-  background-image: url("../src/pictures/184-icons/weather/Light\ snow\ showers.svg");
-}
-
-.Moderate.or.heavy.snow.showers {
-  background-image: url("../src/pictures/184-icons/weather/Moderate\ or\ heavy\ snow\ showers.svg");
-}
-.Light.showers.of.ice.pellets {
-  background-image: url("../src/pictures/184-icons/weather/Light\ showers\ of\ ice\ pellets.svg");
-}
-.Moderate.or.heavy.showers.of.ice.pellets {
-  background-image: url("../src/pictures/184-icons/weather/Moderate\ or\ heavy\ showers\ of\ ice\ pellets.svg");
-}
-.Patchy.light.rain.with.thunder {
-  background-image: url("../src/pictures/184-icons/weather/thunder.svg ");
-}
-.Moderate.or.heavy.rain.with.thunder {
-  background-image: url("../src/pictures/184-icons/weather/thunder.svg");
-}
-
-.Moderate.or.heavy.rain.with.thunder {
-  background-image: url("../src/pictures/184-icons/weather/thunder.svg");
-}
-
-.Patchy.light.snow.with.thunder {
-  background-image: url("../src/pictures/184-icons/weather/thunder.svg");
-}
-
-.Moderate.or.heavy.snow.with.thunder {
-  background-image: url("../src/pictures/184-icons/weather/thunder.svg");
-}
-.Clear {
-  background-image: url("../src/pictures/184-icons/weather/full_moon.svg");
-}

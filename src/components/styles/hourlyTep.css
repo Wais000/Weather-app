@@ -47,7 +47,7 @@
    width:100%;
    display: flex;
    justify-content: space-between;
-   
+   position: sticky;
    color: white;
    padding: 5px;
    background-color:rgb(255, 162, 0);

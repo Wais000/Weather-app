@@ -8,6 +8,8 @@ import { MdOutlineWindPower } from "react-icons/md";
 import { WiWindDeg } from "react-icons/wi";
 import { TiWeatherWindy } from "react-icons/ti";
 import { WiHumidity } from "react-icons/wi";
+import ThreeDaysForcast from "./ThreeDaysForcast";
+import Form from "./Form";
 
 const CurrentWeather = () => {
   // const context = useContext(MyContext);
@@ -95,12 +97,16 @@ const CurrentWeather = () => {
               Pressure in: {pressure_in}{" "}
             </p>
             <p>
-              <WiHumidity />
+              <span>
+                <WiHumidity />
+              </span>
               Humidity: {humidity}{" "}
             </p>
           </div>
         </div>
+        <Form/>
       </div>
+      <ThreeDaysForcast/>
     </div>
   );
 };
