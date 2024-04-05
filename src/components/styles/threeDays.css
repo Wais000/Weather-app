@@ -4,24 +4,28 @@
   display: flex;
   flex-wrap: wrap;
   width:100%;
-  justify-content: flex-start;
+justify-content: space-between;
+  /* justify-content: flex-start; */
   position: relative;
-  margin-top: 120px;
+  margin-top: 50px;
   flex-wrap: wrap;
   font-family: 'Bai Jamjuree';
-  border: 2px solid rgb(74, 71, 78);
+  border: 2px solid rgb(128, 124, 133);
 }
 
 .days {
   /* height: 30vh; */
-  width: 250px;
-  margin: 1% auto;
+  backdrop-filter: blur(11px); 
+  background-color: rgba(255, 255, 255, 0.745); 
+  
+  width: 220px;
+  /* margin: 1% auto; */
   border-radius: 10px;
   padding: 3% 2% 4% 2%;
   background: inherit;
-  background: rgba(255, 255, 255, 0.557);
+  /* background: rgba(255, 255, 255, 0.557); */
   box-shadow: 0 0 32px rgba(0, 0, 0, 0.2);
-  border: 2px solid red;
+  /* border: 2px solid red; */
 }
 .temp {
   display: flex;
@@ -33,5 +37,5 @@
   background-color: rgba(255, 255, 255, 0.081);
   color:darkblue;
   font-size: 13px;
-  padding: 8px;
+  /* padding: 8px; */
 }
