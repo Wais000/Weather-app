@@ -12,10 +12,13 @@
 #main_container{
   width:100vw;
   height: 100vh;
+align-items: center;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   background-position: center;
+  /* justify-content: last baseline; */
+ gap: 30px;
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: darken;

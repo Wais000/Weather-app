@@ -35,7 +35,8 @@
 .hourly21,
 .hourly23
 {
-  background-color: rgba(255, 255, 255, 0.557);
+    backdrop-filter: blur(10px); 
+    background-color: rgba(255, 255, 255, 0.719); 
 }
 .hourly,
 .hourly2,

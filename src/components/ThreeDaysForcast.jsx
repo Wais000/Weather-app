@@ -53,22 +53,25 @@ const ThreeDaysForcast = () => {
   let sunset3 = results.forecast.forecastday[2].astro.sunset;
 
   return (
+    <>
+ 
     <div className="days_container">
       {/* <div id="bc_cont1" className={daysBc1}> */}
+     
       <div className="day1 days ">
-        <p style={{ textAlign: "center", color: "darkBlue" }}>{dayDate1}</p>
+        <p>{dayDate1}</p>
         <div className="temp">
-          <div className="icons" style={{ width: "50%", height: "10vh" }}>
+          <div className="icons">
             <img src={dayIcon2} alt="" />
           </div>
-          <div className="max_av_min" style={{ fontSize: "14px" }}>
+          <div className="max_av_min">
             <p className="max"> max: {dayMaxtemp1}° </p>
             <p className="ave">Ave: {dayAvgtemp_c1}°</p>
             <p className="min">min: {dayMintemp_c1}°</p>
           </div>
         </div>
         <div className="icon_date">
-          <p style={{ color: "darkBlue", padding: "3px" }}>{dayText1}</p>
+          <p>{dayText1}</p>
           <div className="forecast_details">
             <p> maxwind_kph: {maxwind_kph1}</p>
             <p> maxwind_mph: {maxwind_mph1}</p>
@@ -79,19 +82,19 @@ const ThreeDaysForcast = () => {
       </div>
 
       <div className="day2 days">
-        <p style={{ textAlign: "center", color: "darkBlue" }}>{dayDate2}</p>
+        <p>{dayDate2}</p>
         <div className="temp">
-          <div className="icons" style={{ width: "50%", height: "10vh" }}>
+          <div className="icons">
             <img src={dayIcon1} alt="" />
           </div>
-          <div className="max_av_min" style={{ fontSize: "14px" }}>
+          <div className="max_av_min" >
             <p className="max"> max: {dayMaxtemp2}° </p>
             <p className="ave">Ave: {dayAvgtemp_c2}°</p>
             <p className="min">min: {dayMintemp_c2}°</p>
           </div>
         </div>
         <div className="icon_date">
-          <p style={{ color: "darkBlue", padding: "3px" }}>{dayText2}</p>
+          <p >{dayText2}</p>
           <div className="forecast_details">
             <p> maxwind_kph: {maxwind_kph2}</p>
             <p> maxwind_mph: {maxwind_mph2}</p>
@@ -102,20 +105,20 @@ const ThreeDaysForcast = () => {
       </div>
 
       <div className="day3 days ">
-        <p style={{ textAlign: "center", color: "darkBlue" }}>{dayDate3}</p>
+        <p >{dayDate3}</p>
 
         <div className="temp">
-          <div className="icons" style={{ width: "50%", height: "10vh" }}>
+          <div className="icons">
             <img src={dayIcon2} alt="" />
           </div>
-          <div className="max_av_min" style={{ fontSize: "14px" }}>
+          <div className="max_av_min">
             <p className="max"> max: {dayMaxtemp3}° </p>
             <p className="ave">Ave: {dayAvgtemp_c3}°</p>
             <p className="min">min: {dayMintemp_c3}°</p>
           </div>
         </div>
         <div className="icon_date">
-          <p style={{ color: "darkBlue", padding: "3px" }}>{dayText3}</p>
+          <p >{dayText3}</p>
           <div className="forecast_details">
             <p> maxwind_kph: {maxwind_kph3}</p>
             <p> maxwind_mph: {maxwind_mph3}</p>
@@ -125,7 +128,7 @@ const ThreeDaysForcast = () => {
         </div>
       </div>
     </div>
-    // </div>
+    </> 
   );
 };
 

@@ -104,9 +104,15 @@ const CurrentWeather = () => {
             </p>
           </div>
         </div>
-        <Form/>
+
+        {/* <Form /> */}
       </div>
-      <ThreeDaysForcast/>
+      <div>
+
+      </div>
+
+      {/* <ThreeDaysForcast /> */}
+    
     </div>
   );
 };
